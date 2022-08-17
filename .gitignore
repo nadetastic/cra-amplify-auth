@@ -25,6 +25,9 @@ yarn-error.log*
 
 secrets.json
 aws-exports*
+
+
+
 amplify*
 
 #amplify-do-not-edit-begin

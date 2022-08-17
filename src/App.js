@@ -4,14 +4,11 @@ import { Routes, Route } from 'react-router-dom';
 import { Auth } from "aws-amplify";
 import "@aws-amplify/ui-react/styles.css"
 
-
-
 import Home from './pages/Home';
 import WithUI from './pages/WithUI';
 
-
 Auth.configure({
-  authenticationFlowType: 'CUSTOM_AUTH',
+  // authenticationFlowType: 'CUSTOM_AUTH',
   mandatorySignIn: true
 })
 
@@ -23,7 +20,6 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/ui" element={<WithUI />} />
         </Routes>
-       
       </header>
     </div>
   );
